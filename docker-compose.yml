@@ -13,19 +13,19 @@ services:
     - MYSQL_DATABASE=blogdb
     volumes:
     - ./db:/var/lib/mysql 
-#  app:
-#    image: blog_app:1
-#    restart: always
-#    container_name: blogapp
-#    ports:
-#    - "8080:8080"
-#    environment:
-#    - FLASK_KEY=8BYkEfBA6O6donzWlSihBXox7C0sKR6b
-#    - DB_URI=db
-#    - DB_SCHEMA=blogdb
-#    - DB_LOGIN=root
-#    - DB_PASS=mysql
-#    - ADMIN_EMAIL=admin@admin.me
-#    - ADMIN_PASSWORD=1234qwer
+  app:
+    image: blog_app:1
+    restart: always
+    container_name: blogapp
+    ports:
+    - "8080:8080"
+    environment:
+    - FLASK_KEY=some_key
+    - DB_URI=db
+    - DB_SCHEMA=blogdb
+    - DB_LOGIN=some_login
+    - DB_PASS=some_pass
+    - ADMIN_EMAIL=admin@admin.me
+    - ADMIN_PASSWORD=some_pass
 
 

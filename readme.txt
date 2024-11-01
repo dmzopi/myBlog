@@ -9,7 +9,9 @@ pip3 install -r requirements.txt
 pip3 freeze > requirements.txt
 5. Set env variables to run te app (see docker compose)
 6. Git
-Create new repo in github, then
+Create new repo in github
+create  local .gitignore
+After:
 git init
 git add .
 git commit -m "first commit"
@@ -20,6 +22,8 @@ git push -u origin main
 git remote add origin git@github.com:dmzopi/myBlog.git
 git branch -M main
 git push -u origin main
+
+
 
 
 
