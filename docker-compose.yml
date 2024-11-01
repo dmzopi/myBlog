@@ -9,7 +9,7 @@ services:
     ports:
     - "3306:3306"
     environment:
-    - MYSQL_ROOT_PASSWORD=mysql
+    - MYSQL_ROOT_PASSWORD=db_pass
     - MYSQL_DATABASE=blogdb
     volumes:
     - ./db:/var/lib/mysql 
@@ -24,7 +24,7 @@ services:
     - DB_URI=db
     - DB_SCHEMA=blogdb
     - DB_LOGIN=some_login
-    - DB_PASS=some_pass
+    - DB_PASS=db_pass
     - ADMIN_EMAIL=admin@admin.me
     - ADMIN_PASSWORD=some_pass
 
